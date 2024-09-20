@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="constraints">
+            <h1>Random Number Generator</h1>
+            <p>Guess a number between 1 and 100</p>
+            <p>You have 10 attempts to get it right</p>
+        </div>
+
+        <form>
+            <h3>Guess the number:</h3>
+            <input id="input" type="number" min="1" max="100" placeholder="Enter your guess" required>
+            <input id="submit" type="submit" value="Submit Guess">
+        </form>
+
+        <div id="check-constraints">
+            <p>Your previous guesses: <span id="prev-guess"></span></p>
+            <p>Remaining attempts: <span id="rem-guess">10</span></p>
+            <p id="lowOrHi"></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
